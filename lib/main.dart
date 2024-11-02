@@ -1,7 +1,7 @@
+import 'package:age_and_land_calculation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'screens/land_calculation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const AccountPage(),
+      child: const HomeScreen(),
     );
   }
 }

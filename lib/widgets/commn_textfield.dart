@@ -1,5 +1,6 @@
 // ignore_for_file: must_be_immutable
 
+import 'package:age_and_land_calculation/widgets/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -38,7 +39,7 @@ class CommonTextField extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).scaffoldBackgroundColor,
          border: Border.all(color:const Color(0xFF4494CE).withOpacity(0.1), width: 1.w),
-        borderRadius: BorderRadius.circular(28.r),
+        borderRadius: BorderRadius.circular(12.r),
       ),
       child: SizedBox(
         height: 44.h,
@@ -52,7 +53,7 @@ class CommonTextField extends StatelessWidget {
           onChanged: onChange,
           textAlign: textAlign,
           // focusNode: _focusNode,
-          style: Theme.of(context).textTheme.displaySmall!.copyWith(fontSize: 14),
+          style: CustomTextStyles.mediumText(12.sp,color: Colors.black),
           decoration: InputDecoration(
             hintText: hint,
             hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 14),
@@ -67,7 +68,7 @@ class CommonTextField extends StatelessWidget {
             contentPadding:
             EdgeInsets.only(left: 12.w, top: 0.h, bottom: 0.h,right: 12.w),
             border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(28.0.r)),
+                borderRadius: BorderRadius.all(Radius.circular(12.0.r)),
                 borderSide: BorderSide.none
             ),
             // disabledBorder: OutlineInputBorder(
@@ -75,7 +76,7 @@ class CommonTextField extends StatelessWidget {
             //     borderSide: BorderSide(
             //         color: Theme.of(context).focusColor, width: .1.w)),
             focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(28.0.r)),
+                borderRadius: BorderRadius.all(Radius.circular(12.0.r)),
                 borderSide: BorderSide(color: Colors.blue, width: .1.w)),
             filled: true,
             //  labelText: widget.title,

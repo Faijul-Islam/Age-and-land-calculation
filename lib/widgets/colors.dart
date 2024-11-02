@@ -9,7 +9,7 @@ class CustomColors {
   static const primaryBlue = Color(0xFF12408F);
   //static const primary = Colors.blue;
   static const primary = Color(0xFF12408F);
-  static const bodyColor = Color(0xFFE5EDF5);
+  static const bodyColor = Color(0xFFC2D9F1);
   static const cardColor = Color(0xFFFFFFFF);
 
 }
